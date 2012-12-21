@@ -1,0 +1,11 @@
+package com.bhatt.arrays;
+
+/**
+ * @author bhatt
+ * if a string has all unique characters
+ */
+
+
+public class One {
+
+}

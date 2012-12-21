@@ -1,0 +1,25 @@
+package com.bhatt.arrays;
+
+/**
+ * 
+ * @author bhatt
+ * Reverse a String C-Style
+ */
+public class Two {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static String reverseString(String input){
+		
+		
+		
+		return null;
+	}
+
+}

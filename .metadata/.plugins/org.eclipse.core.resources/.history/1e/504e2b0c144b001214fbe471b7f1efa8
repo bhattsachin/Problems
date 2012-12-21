@@ -1,0 +1,33 @@
+package com.bhatt.arrays;
+
+/**
+ * @author bhatt
+ * if a string has all unique characters
+ */
+
+
+public class One {
+
+	
+	
+	public static void main(String args[]){
+		
+		System.out.println("Unique characters");
+		
+		String input = "hanmod";
+		
+		
+		
+		
+		
+	}
+	
+	public void boolean hasUnique(String input){
+		
+		
+		
+		
+	}
+	
+	
+}

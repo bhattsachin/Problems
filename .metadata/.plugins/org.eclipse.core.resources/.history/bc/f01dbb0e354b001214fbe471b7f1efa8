@@ -1,0 +1,29 @@
+package com.bhatt.arrays;
+
+/**
+ * 
+ * @author bhatt Reverse a String C-Style
+ */
+public class Two {
+
+	public static String reverseString(String input) {
+		int len = input.length();
+		char[] reverse = new char[len];
+		char[] inputarray = input.toCharArray();
+		for (int i = 0; i < len; i++) {
+			reverse[(len - 1) - i] = inputarray[i];
+		}
+		return String.valueOf(reverse);
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String input = "vascodigama";
+		System.out.println("Reverse of : " + input + " is : "
+				+ reverseString(input));
+
+	}
+
+}

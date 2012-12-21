@@ -1,0 +1,25 @@
+package com.bhatt.arrays;
+
+public class Four {
+	
+	
+	public static boolean isAnagram(String input){
+		char[] inputarray = input.toCharArray();
+		int len = inputarray.length;
+		
+		
+		
+		return false;
+	}
+	
+	
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
