@@ -1,3 +1,0 @@
-INDEX VERSION 1.126+/Users/bhatt/Documents/Practice/.metadata/.plugins/org.eclipse.jdt.core
-1936915401.index
-2012472112.index
