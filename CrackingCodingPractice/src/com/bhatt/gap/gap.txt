@@ -1,0 +1,8 @@
+Trigram based story generation. 
+Each step is a state. current state depends on only prevoius 2 states. Which is kind of a markov property. We can have as many as n^2 states at the maximum if any input story has n distinct words. All these bigrams will be key for the index. Corresponding to each key we will have a list of words which follow the bigram. In addition there are punctuations which must not be removed as it helps to keep the semantics correct.  
+
+Steps:
+1. Scanner - takes a word at a time from input and parse. 
+2. Indexer must keep a check of last word added. In case a file is too big to be loaded in memory Indexer must take input in chunks and hence need to keep track of word obtained in last payload.
+3. When generating stories, there can be a cycle, so we must specify a limit on length of story to be generated.
+4. If input to too large and index file would exceed memory limits. Data can be offloaded to a backend store. In addition a inmemory cache can be used to keep most frequently used pairs to reduce filesystem lookups. 
