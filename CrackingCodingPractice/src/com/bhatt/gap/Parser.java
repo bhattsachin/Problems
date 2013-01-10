@@ -27,7 +27,7 @@ public class Parser {
 	 * @param sentence
 	 * @return
 	 */
-	public String[] parse(String sentence){
+	public static String[] parse(String sentence){
 		String[] words = sentence.split(SPACE);
 		return words;
 	}

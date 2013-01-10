@@ -1,5 +1,6 @@
 package com.bhatt.gap;
 
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -12,7 +13,6 @@ import java.util.List;
  */
 public class Trigram {
 	
-	private Parser parser = new Parser();
 	private Indexer indexer = new Indexer();
 	private Generator generator = null;
 
@@ -21,7 +21,7 @@ public class Trigram {
 	 */
 	public static void main(String[] args) {
 		Trigram trigram = new Trigram();
-		trigram.train("I wish I may I wish I might");
+		trigram.trainFromFile("/Users/bhatt/Documents/Practice/CrackingCodingPractice/src/Carol.txt"); //FIXME: use relative path
 		System.out.println("----- Printing Index -------");
 		trigram.printIndex();
 		System.out.println("----- Printing Story -------");
@@ -34,9 +34,20 @@ public class Trigram {
 	 * @param sentence
 	 */
 	public void train(String sentence){
-		String[] words = parser.parse(sentence);
+		String[] words = Parser.parse(sentence);
 		indexer.index(words);
 		
+	}
+	
+	public void trainFromFile(String filename){
+		StoryReader reader = new StoryReader(indexer);
+		try{
+		reader.readFromTxtFile(filename);
+		}catch(IOException ex){
+			ex.printStackTrace();
+			System.out.println("ERROR READING FILE");
+			System.exit(1);
+		}
 	}
 	
 	public void printIndex(){
