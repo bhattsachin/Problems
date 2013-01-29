@@ -18,6 +18,14 @@ public class Node {
 		curr.next = node;
 	}
 	
+	public void append(Node node){
+		Node curr = this;
+		while(curr.next!=null){
+			curr = curr.next;
+		}
+		curr.next = node;
+	}
+	
 	public void delete(int nData){
 		Node curr = this;
 		Node prev = null;
