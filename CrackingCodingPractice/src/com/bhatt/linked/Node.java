@@ -2,8 +2,8 @@ package com.bhatt.linked;
 
 public class Node {
 	
-	Node next;
-	int data;
+	public Node next;
+	public int data;
 	
 	public Node(int nData){
 		this.data = nData;
