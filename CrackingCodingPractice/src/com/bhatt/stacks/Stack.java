@@ -31,6 +31,9 @@ public class Stack {
 			top = top.next;
 		}
 		
+		ltop.next = null; //remove any links
+		
+		
 		return ltop;
 		
 	}

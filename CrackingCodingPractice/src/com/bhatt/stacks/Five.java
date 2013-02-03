@@ -47,6 +47,7 @@ public class Five {
 		}else{
 			while(first.peek()!=null){
 				tmp = first.pop();
+				
 				second.push(tmp);
 				
 			}
