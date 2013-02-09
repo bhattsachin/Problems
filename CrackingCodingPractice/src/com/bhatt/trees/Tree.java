@@ -19,6 +19,10 @@ public class Tree {
 	public Tree(int value) {
 		this.value = value;
 	}
+	
+	public Tree(){
+		
+	}
 
 	public void add(Tree tree) {
 		if (tree.value > this.value) {
@@ -27,18 +31,18 @@ public class Tree {
 			else
 				this.right.add(tree);
 		} else {
-			if (this.left == null) {
-				if (this.left == null)
-					this.left = tree;
-				else
-					this.left.add(tree);
-			}
+
+			if (this.left == null)
+				this.left = tree;
+			else
+				this.left.add(tree);
 
 		}
 	}
 
 	/**
 	 * traverse breadth first
+	 * 
 	 * @param queue
 	 */
 	public void traverseBreadthFirst(Queue queue) {
@@ -73,6 +77,23 @@ public class Tree {
 	}
 
 	/**
+	 * 
+	 * @return
+	 */
+	public int maxDepth() {
+		if (this.left == null && this.right == null)
+			return 0; // this dude is leaf node
+		if (this.left == null || this.right == null) {
+			if (this.left != null)
+				return this.left.maxDepth() + 1;
+			else
+				return this.right.maxDepth() + 1;
+		}
+		return (Math.max(this.left.maxDepth(), this.right.maxDepth()) + 1);
+
+	}
+
+	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
@@ -86,9 +107,9 @@ public class Tree {
 		Queue queue = new LinkedList<Tree>();
 		queue.offer(tree);
 		tree.traverseBreadthFirst(queue);
-		
+
 		System.out.println("=====depth first=====");
-		
+
 		tree.traverseDepthFirst();
 
 	}
