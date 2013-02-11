@@ -45,8 +45,10 @@ public class Tree {
 	 * 
 	 * @param queue
 	 */
-	public void traverseBreadthFirst(Queue queue) {
+	public void traverseBreadthFirst() {
 		Tree tmp;
+		Queue queue = new LinkedList<Tree>();
+		queue.offer(this);
 		while (queue.peek() != null) {
 			tmp = (Tree) queue.poll();
 			System.out.println(tmp.value + ", ");
@@ -104,9 +106,7 @@ public class Tree {
 		tree.add(new Tree(21));
 		tree.add(new Tree(76));
 
-		Queue queue = new LinkedList<Tree>();
-		queue.offer(tree);
-		tree.traverseBreadthFirst(queue);
+		tree.traverseBreadthFirst();
 
 		System.out.println("=====depth first=====");
 
