@@ -1,0 +1,102 @@
+{
+ "name": "flare",
+ "children": [
+ 
+	{"name": "a", "children":[
+			{"name": "JOSHI", "size": 1},
+			{"name": "DINKAR", "size": 1},
+			{"name": "PANDYA", "size": 1}
+	]},
+	
+	{"name": "b", "children":[
+			{"name": "AGARWAL", "size": 2},
+			{"name": "SUREKA", "size": 1},
+			{"name": "GOYAL", "size": 1},
+			{"name": "SHANKER", "size": 1},
+			{"name": "MAHAJAN", "size": 1}
+	]},
+	
+	{"name": "c", "children":[
+			{"name": "KUMAR", "size": 1},
+			{"name": "LAL", "size": 1},
+			{"name": "RAM", "size": 1},
+			{"name": "SINGH", "size": 1},
+			{"name": "MAL", "size": 1},
+			{"name": "BHUSAN", "size": 1}
+	]},
+	
+	{"name": "d", "children":[
+			{"name": "PRASAD", "size": 1},
+			{"name": "JAYASWAL", "size": 1},
+			{"name": "GUPTA", "size": 1}
+	]},
+	
+	{"name": "e", "children":[
+			{"name": "PAL", "size": 1},
+			{"name": "DHANDHLA", "size": 1},
+			{"name": "BHOWMICK", "size": 1}
+	]}, 
+	
+	{"name": "f", "children":[
+			{"name": "KAPOOR", "size": 1},
+			{"name": "ARORA", "size": 1},
+			{"name": "GUPTA", "size": 1}
+	]}, 
+	
+	{"name": "g", "children":[
+			{"name": "TRIVEDI", "size": 2},
+			{"name": "DAVE", "size": 1},
+			{"name": "MAFATLAL", "size": 1},
+			{"name": "SHUKLA", "size": 1}
+	]}, 
+	
+	{"name": "h", "children":[
+			{"name": "DUBEY", "size": 1},
+			{"name": "PANDEY", "size": 1},
+			{"name": "TRIPATHY", "size": 1}
+	]},
+	
+	{"name": "i", "children":[
+			{"name": "CHATTERJEE", "size": 2},
+			{"name": "CHOWDHURY", "size": 2}
+	]}, 
+	
+	{"name": "j", "children":[
+			{"name": "SHARMA", "size": 1},
+			{"name": "VASHISHT", "size": 1},
+			{"name": "PRABHAKAR", "size": 2},
+			{"name": "KUMAR", "size": 1},
+			{"name": "SINGH", "size": 1},
+			{"name": "LAL", "size": 1},
+			{"name": "MISHRA", "size": 1}
+	]},
+	
+	{"name": "k", "children":[
+			{"name": "PATEL", "size": 1},
+			{"name": "HINGRAJIYA", "size": 2},
+			{"name": "NANAVATI", "size": 1},
+			{"name": "GAMI", "size": 1},
+			{"name": "JOITRAM", "size": 1},
+			{"name": "SHIVRAMDAS", "size": 2},
+			{"name": "RAMCHANDDAS", "size": 2},
+			{"name": "DESAI", "size": 1},
+			{"name": "NAIK", "size": 1},
+			{"name": "MISTRY", "size": 1},
+			{"name": "GAJJAR", "size": 1}
+	]}, 
+	
+	{"name": "l", "children":[
+			{"name": "KOTHARI", "size": 1},
+			{"name": "DALAKOTI", "size": 1},
+			{"name": "SOMANI", "size": 1}
+	]},
+	
+	{"name": "m", "children":[
+			{"name": "BHATT", "size": 1},
+			{"name": "UPADHYAY", "size": 1},
+			{"name": "PANDYA", "size": 1},
+			{"name": "SHARMA", "size": 1},
+			{"name": "KUMAR", "size": 1}
+	]}
+ ]
+}
