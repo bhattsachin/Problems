@@ -20,6 +20,9 @@ public class Chapter1 {
 		System.out.println('a' + 'b');
 		System.out.println((char)('a'+4));
 		
+		System.out.println((9.0/9.0));
+		System.out.println(Integer.toBinaryString(8));
+		
 		
 		
 
