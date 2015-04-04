@@ -15,7 +15,7 @@ public class BaseConversion {
         assert(base1<=16 && base2<=16);
         int numInBase10=0;
         for(char c : baseString.toCharArray()){
-            
+
         }
 
         return "ok";
